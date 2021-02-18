@@ -1,0 +1,26 @@
+.btn{
+    padding: 1.6rem;
+    @include border-radius;
+    border: none;
+    @include bodycopy-semi-bold;
+}
+
+.bt-secondary{
+    background: $color-green-shade;
+    color: $color-white !important;
+}
+
+.bt-secondary:hover{
+    background: $color-primary;
+    border: none;
+}
+
+.bt-secondary-light {
+    background: rgba($color-green-shade, 0.2);
+    color: $color-green !important;
+}
+
+.bt-secondary-light:hover{
+    background: $color-primary;
+    color: $color-white !important;
+}

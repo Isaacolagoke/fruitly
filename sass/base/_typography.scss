@@ -1,0 +1,263 @@
+// font styles
+
+// Bold styles
+
+h1, .h1-bold{
+    font-size: 6.4rem;
+    line-height: 7.2rem !important;
+    font-weight: bold;
+}
+
+h2, .h2-bold{
+    /* font/bold/h2 */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+
+h3, .h3-bold{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+}
+
+h4, .h4-bold, .headline{
+    /* font/bold/headline */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+h5, .h5-bold, .sub-heading{
+    /* font/bold/subheading */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.bodycopy-bold{
+    /* font/bold/bodycopy */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.body-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.caption-bold {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+// Semi-bold styles
+
+h1, .h1-semi-bold{
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    line-height: 92.29%;
+    font-weight: 600;
+}
+
+h2, .h2-semi-bold{
+    /* font/semi-bold/h2 */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+
+h3, .h3-semi-bold{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+}
+
+h4, .h4-semi-bold, .headline{
+    /* font/semi-bold/headline */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+h5, .h5-semi-bold, .sub-heading{
+    /* font/semi-bold/subheading */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.bodycopy-semi-bold{
+    /* font/semi-bold/bodycopy */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+@mixin bodycopy-semi-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+.body-semi-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+.caption-semi-bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+// Medium styles
+
+h1, .h1-medium{
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    line-height: 92.29%;
+    font-weight: 500;
+}
+
+h2, .h2-medium{
+    /* font/medium/h2 */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+
+h3, .h3-medium{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+}
+
+h4, .h4-medium, .headline{
+    /* font/medium/headline */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+h5, .h5-medium, .sub-heading{
+    /* font/medium/subheading */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+.bodycopy-medium{
+    /* font/medium/bodycopy */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.body-medium {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.caption-medium {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+// Normal style
+
+h1, .h1-regular{
+    font-size: 6.4rem;
+    line-height: 7.2rem;
+    line-height: 92.29%;
+    font-weight: normal;
+}
+
+h2, .h2-regular{
+    /* font/regular/h2 */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+}
+
+h3, .h3-regular{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3.2rem;
+    line-height: 4.0rem;
+}
+
+h4, .h4-regular, .headline{
+    /* font/regular/headline */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+h5, .h5-regular, .sub-heading{
+    /* font/regular/subheading */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+}
+
+p, .bodycopy-regular{
+    /* font/regular/bodycopy */
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.body-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.caption-regular {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+
+// SB heading
+
+.sb-heading{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}

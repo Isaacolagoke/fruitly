@@ -1,0 +1,11 @@
+
+// Background gradient
+
+@mixin bg-gradient{
+    background: linear-gradient(252.63deg, rgba(242, 232, 207, 0.4) 4.76%, rgba(242, 232, 207, 0) 83.33%);
+}
+
+// Border radius
+@mixin border-radius {
+    border-radius: 1.2rem;
+}

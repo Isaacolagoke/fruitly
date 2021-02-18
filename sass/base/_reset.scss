@@ -1,0 +1,19 @@
+// Homepage section background
+
+.bg-light{
+    background: $color-white;
+    // height: 76.7rem;
+    padding: 6.4rem 0;
+}
+
+.bg-color{
+    @include bg-gradient;
+    // height: 76.7rem;
+    padding: 6.4rem 0;
+}
+
+
+// homepage highlight
+.span-highlight{
+    color: $color-secondary;
+}
