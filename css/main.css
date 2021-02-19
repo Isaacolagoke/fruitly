@@ -674,8 +674,18 @@ header .hero .hero-b .image-bg2 img {
 
 @media only screen and (max-width: 768px) {
   .video-box {
-    width: 100%;
     margin-top: 3.2rem !important;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .video-box iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
   }
 }
 
