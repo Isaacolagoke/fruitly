@@ -790,7 +790,6 @@ header .hero .hero-b .image-bg2 img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 2.4rem;
-  height: 100rem;
 }
 
 .acc-sec .accordion {

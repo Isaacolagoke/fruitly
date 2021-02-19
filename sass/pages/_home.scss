@@ -438,14 +438,12 @@ header{
 .faq-container{
     @include bg-gradient;
     padding: 6.4rem 0;
-    // height: 100rem;
 }
 .acc-sec{
     margin-top: 6rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2.4rem;
-    height: 100rem;
 
     .accordion{
         border: none;
