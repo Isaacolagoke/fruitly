@@ -672,20 +672,16 @@ header .hero .hero-b .image-bg2 img {
   background: #F2E8CF;
 }
 
+.video-box .video {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+}
+
 @media only screen and (max-width: 768px) {
   .video-box {
-    margin-top: 3.2rem !important;
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-  }
-  .video-box iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
     width: 100%;
-    position: absolute;
+    margin-top: 3.2rem !important;
   }
 }
 
@@ -794,6 +790,7 @@ header .hero .hero-b .image-bg2 img {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 2.4rem;
+  height: 100rem;
 }
 
 .acc-sec .accordion {
