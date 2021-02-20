@@ -32,6 +32,10 @@ body {
   }
 }
 
+a {
+  color: #131B15 !important;
+}
+
 .bg-light {
   background: #ffffff;
   padding: 6.4rem 0;

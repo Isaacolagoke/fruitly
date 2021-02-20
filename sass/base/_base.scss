@@ -37,7 +37,9 @@ body {
     }
 }
 
-
+a{
+    color: $color-body !important;
+}
 
 // .pages{
 //     min-height: 100vh;
