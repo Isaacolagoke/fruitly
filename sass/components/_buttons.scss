@@ -11,7 +11,7 @@
 }
 
 .bt-secondary:hover{
-    background: $color-primary;
+    background: rgba($color-green-shade, .8);
     border: none;
 }
 
@@ -21,6 +21,6 @@
 }
 
 .bt-secondary-light:hover{
-    background: $color-primary;
+    background: $color-green-shade;
     color: $color-white !important;
 }

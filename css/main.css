@@ -308,7 +308,7 @@ p, .bodycopy-regular {
 }
 
 .bt-secondary:hover {
-  background: #A7C957;
+  background: rgba(106, 153, 78, 0.8);
   border: none;
 }
 
@@ -318,7 +318,7 @@ p, .bodycopy-regular {
 }
 
 .bt-secondary-light:hover {
-  background: #A7C957;
+  background: #6A994E;
   color: #ffffff !important;
 }
 
