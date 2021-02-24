@@ -1,0 +1,78 @@
+.general-form{
+    .location-setting{
+        margin-top: 1.6rem;
+
+        .sb-heading{
+            color: $color-green;
+            margin-bottom: 1.6rem;
+        }
+
+        .form-check{
+            margin: 1.6rem 0 0;
+           
+            span{
+                color: $color-green;
+            }
+        }
+
+        .form-check-input {
+            width: 1.2em;
+            height: 1.2em;
+            border-radius: .6rem;
+            margin-top: .25em;
+            vertical-align: top;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            border: 1px solid $color-body;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            -webkit-print-color-adjust: exact;
+        }
+
+        .form-check-input:checked {
+            background-color: $color-body;
+            border-color: $color-body;
+        }
+        .forgot-password{
+            cursor: pointer;
+            margin-top: 1.6rem;
+        }
+        .link{
+            margin-top: 1.6rem;
+
+            span{
+                color: $color-green;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.logo-btn{
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    padding: 1.6rem;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    background: $color-background-sec;
+    @include border-radius;
+
+    p{
+        align-self: center;
+        margin-bottom: 0 !important;
+    }
+    img{
+        height: 2.4rem;
+        margin-right: 1.6rem;
+    }
+}
+
+.logo-btn:hover{
+    background: $color-shade;
+}

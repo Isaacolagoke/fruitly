@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <!-- Custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Fruilty.app</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="container">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./asset/Fruitly-logo.png" alt="">
+                    <span class="iconify menu" onclick="menuBtn()" data-icon="bytesize:menu" data-inline="false"></span>
+                </div>
+
+                <div class="header-content" id="headerCnt">
+                    <ul>
+                        <li>
+                            <a href="">How it works</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn bt-secondary-light" href="">Sign in</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn bt-secondary" href="">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menu Btn -->
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h3-semi-bold">Select Your Plan</h3>
+
+                <p class="mt-4">Choose your fruit plan below! Get your plan delivered to your doorstep. <br>
+                    No commitments - customize, pause, or cancel your subscription at any time.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="mt-5">
+        <div class="container">
+            <p class="sb-heading">
+                Choose Subscription
+            </p>
+
+              <!-- cards -->
+            <div class="description-cards">
+                <!-- Fruit Package detail -->
+                <div class="card">
+                    <img src="./asset/image.png" alt="">
+                    <div class="solid"></div>
+
+                    <p class="plan-header bodycopy-bold mt-3">
+                        Active Bunny
+                    </p>
+                    <p class="body-regular">Enough for one, Delivered to your doorstep once a week</p>
+                    <p class="body-regular">
+                       <span>Bag contains</span> Carrot, Cucumber, Pineapple, Orange, Watermelon
+                    </p>
+                    <p class="price bodycopy-bold">₦15,000/month</p>
+
+                    <a href="/address.html" type="button" class="btn btn-secondary">ORDER NOW</a>
+                </div>
+
+                 <!-- Fruit Package detail -->
+                 <div class="card">
+                    <img src="./asset/image.png" alt="">
+                    <div class="solid"></div>
+
+                    <p class="plan-header bodycopy-bold mt-3">
+                        X Deer
+                    </p>
+                    <p class="body-regular">Enough for two, Delivered to your doorstep once a week</p>
+                    <p class="body-regular">
+                       <span>Bag contains</span> Carrot, Cucumber, Pineapple, Orange, Watermelon
+                    </p>
+                    <p class="price bodycopy-bold">₦20,000/month</p>
+
+                    <a href="" type="button" class="btn btn-secondary">ORDER NOW</a>
+                </div>
+
+                 <!-- Fruit Package detail -->
+                 <div class="card">
+                    <img src="./asset/image.png" alt="">
+                    <div class="solid"></div>
+
+                    <p class="plan-header bodycopy-bold mt-3">
+                        Bulk Panda
+                    </p>
+                    <p class="body-regular">Family size, Delivered to your doorstep once a week</p>
+                    <p class="body-regular">
+                       <span>Bag contains</span> Carrot, Cucumber, Pineapple, Orange, Watermelon
+                    </p>
+                    <p class="price bodycopy-bold">₦25,000/month</p>
+
+                    <a href="" type="button" class="btn btn-secondary">ORDER NOW</a>
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+  
+
+  
+  
+   
+
+     
+     
+  
+
+    <!-- mobile header menu -->
+    <script>
+        function menuBtn() {
+            let x = document.getElementById("headerCnt");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+     <!-- Iconify -->
+     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>

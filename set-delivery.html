@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <!-- Custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Fruilty.app</title>
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <div class="container">
+            <div class="header-container">
+                <div class="header-logo">
+                    <img src="./asset/Fruitly-logo.png" alt="">
+                    <span class="iconify menu" onclick="menuBtn()" data-icon="bytesize:menu" data-inline="false"></span>
+                </div>
+
+                <div class="header-content" id="headerCnt">
+                    <ul>
+                        <li>
+                            <a href="">How it works</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn bt-secondary-light" href="">Sign in</a>
+                        </li>
+                        <li>
+                            <a type="button" class="btn bt-secondary" href="">Get Started</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Menu Btn -->
+            </div>
+        </div>
+
+    </header>
+
+    <!-- product description -->
+    <section>
+      <div class="container mt-5">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h3-semi-bold">When would you like us <br>
+                    to make the deliveries?</h3>
+            </div>
+
+            <div class="fruitcard-header">
+                <div class="image-cnt">
+                    <img src="./asset/image.png" alt="">
+                </div>
+                <div class="a">
+                    <p class="body-semi-bold">Active Buuny</p>
+                    <p class="body-bold price">₦4000 monthly</p>
+                    <p class="body-regular">Delivered to your doorstep 
+                        once a week for one month </p>
+                    <a href="" class="link body-regular">change your bag</a>
+                </div>
+                <div class="a">
+                    <p class="body-semi-bold">Address</p>
+                    <p class="body-regular">No 3, Saka Street, Ibadan, 
+                        Oyo State </p>
+                    <p class="body-semi-bold">Contact Phone Number</p>
+                    <p class="body-regular">07068714413 </p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- preference settings-->
+
+    <section>
+        <div class="container delivery-details">
+           
+            <p class="sb-heading section-title">Set Delivery Preferrence</p>
+            <div class="preference-container">
+                <!-- day -->
+                <div class="preference-container__day">
+
+                    <p class="bodycopy-medium">Preferred Day</p>
+
+                    <div class="select-box">
+                        <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="saturday" value="1" name="deliveryDay" checked="checked"/>
+                            <p class="select-box__input-text">Every Saturday</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="sunday" value="4" name="deliveryDay"/>
+                            <p class="select-box__input-text">Every Sunday</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="saturday" aria-hidden="aria-hidden">Every Saturday</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="sunday" aria-hidden="aria-hidden">Every Sunday</label>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>  
+
+                  <!-- hour -->
+                  <div class="preference-container__hour">
+
+                    <p class="bodycopy-medium">Preferred Hour</p>
+
+                    <div class="select-box">
+                        <div class="select-box__current" tabindex="1">
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="8-9am" value="1" name="deliveryTime" checked="checked"/>
+                            <p class="select-box__input-text">8-9am</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="9-10am" value="2" name="deliveryTime"/>
+                            <p class="select-box__input-text">9-10am</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="10-11am" value="3" name="deliveryTime"/>
+                            <p class="select-box__input-text">10-11am</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="11-12am" value="4" name="deliveryTime"/>
+                            <p class="select-box__input-text">11-12pm</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="12-1pm" value="5" name="deliveryTime"/>
+                            <p class="select-box__input-text">12-1pm</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="1pm-2pm" value="6" name="deliveryTime"/>
+                            <p class="select-box__input-text">1pm-2pm</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="2pm-3pm" value="7" name="deliveryTime"/>
+                            <p class="select-box__input-text">2pm-3pm</p>
+                        </div>
+                        <div class="select-box__value">
+                            <input class="select-box__input" type="radio" id="3pm-4pm" value="7" name="deliveryTime"/>
+                            <p class="select-box__input-text">3pm-4pm</p>
+                        </div>
+                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                        </div>
+                        <ul class="select-box__list">
+                        <li>
+                            <label class="select-box__option" for="9-10am" aria-hidden="aria-hidden">8-9am</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="9-10am" aria-hidden="aria-hidden">9-10am</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="10-11am" aria-hidden="aria-hidden">10-11am</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="11-12pm" aria-hidden="aria-hidden">11-12pm</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="12-1pm" aria-hidden="aria-hidden">12-1pm</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="1-2pm" aria-hidden="aria-hidden">1pm-2pm</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="2-3pm" aria-hidden="aria-hidden">2pm-3pm</label>
+                        </li>
+                        <li>
+                            <label class="select-box__option" for="3pm-4pm" aria-hidden="aria-hidden">3pm-4pm</label>
+                        </li>
+                        </ul>
+                    </div>
+
+                </div>  
+
+            </div>
+            <a href="/set-payment.html" type="button" class="btn btn-primary delivery-btn">Confirm Preference</a>
+        </div>
+    </section>
+
+
+
+
+    <div class="container">
+
+   
+
+    </div>
+  
+   
+
+     
+     
+  
+
+    <!-- input-->
+    <script>
+           const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(el => {
+        el.addEventListener('blur', e => {
+            if(e.target.value) {
+            e.target.classList.add('dirty');
+            } else {
+            e.target.classList.remove('dirty');
+            }
+        })
+        })
+    </script>
+    <!-- mobile header menu -->
+    <script>
+        function menuBtn() {
+            let x = document.getElementById("headerCnt");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+     <!-- Iconify -->
+     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>

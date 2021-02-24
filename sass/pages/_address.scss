@@ -1,0 +1,220 @@
+.fruitcard-header{
+    display: flex;
+
+    margin-top: 2.4rem;
+    .image-cnt{
+        @include border-radius;
+        @include card-bg;
+        width: 23.6rem;
+        height: 16.8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            height: 13rem;
+            width: 16.5rem;
+        }
+    }
+    .a{
+        width: 21.6rem;
+        .price{
+            color: $color-secondary;
+        }
+        .link{
+            text-decoration: underline;
+            color: $color-green-shade !important;
+        }
+        .link:hover{
+            color: $color-body !important;
+        }
+    }
+}
+
+.fruitcard-header div:not(:first-child){
+    margin-left: 2.4rem;
+}
+
+@media only screen and (max-width:768px) {
+    .fruitcard-header{
+        flex-direction: column;
+
+        .a{
+            margin-top: 1.6rem;
+        }
+    }
+
+    .location-setting{
+        flex-direction: column;
+
+        &__form{
+            width: 100%;
+        }
+        &__map{
+            margin-top: 2.4rem;
+            width: 100% !important;
+        }
+    }
+   
+    .location-setting div:not(:first-child){
+        margin-left: 0 !important;
+    }
+
+    .input-field input {
+        width: 100% !important;
+    }
+}
+
+.location-setting{
+    display: flex;
+    margin-top: 6rem;
+    
+    &__form{
+        @include border-radius;
+       background: rgba(242, 232, 207, 0.2);
+        padding: 1.6rem;
+
+        a{
+            background: $color-green !important;
+        }
+        a:hover{
+            background: rgba($color-green, .8) !important;
+        }
+
+        p{
+            margin-bottom: 1.6rem;
+        }
+        .btn-primary{
+            width: 100%;
+            color: $color-white !important;
+        }
+    }
+    &__map{
+        @include border-radius;
+       background: rgba(242, 232, 207, 0.2);
+        padding: 1.6rem;
+        width: 44.8rem;
+        height: max-content;
+
+        .map-box{
+            margin-top: 3.2rem;
+            margin-left: 0 !important;
+           img{
+            @include border-radius;
+            width: 100%;
+           }
+        }
+    }
+}
+
+.location-setting div:not(:first-child){
+    margin-left: 6.9rem;
+}
+
+// selcect
+.form-select-lg {
+    margin-top: 1.6rem;
+    // padding-top: 1.6rem !important;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    font-size: 1.6rem !important;
+}
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 1.6rem 3.25rem 1.6rem 1.6rem;
+    font-size: 1.6rem !important;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #666666;
+    background-color: none;
+    background: url('https://api.iconify.design/icons8:angle-down.svg') no-repeat center center / contain;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid $color-body;
+    @include border-radius;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.form-select:focus {
+    z-index: 3;
+    border-color: $color-shade;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba($color-green-shade, 0.8);
+}
+
+// form style
+
+  .input-field {
+    display: block;
+    position: relative;
+    font-size: 1.6rem;
+    padding-top: 1.6rem;
+    margin-bottom: .5rem;
+  }
+  
+  .input-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    padding: 1.2rem;
+    @include border-radius;
+    width: 41.7rem;
+    outline: none;
+    font-size: 1.6rem;
+  }
+  
+  .input-field .placeholder {
+    position: absolute;
+    left: 1.6rem;
+    top: calc(50% + 1rem);
+    transform: translateY(-50%);
+    color: #666666;
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+  
+  .input-field input.dirty + .placeholder,
+  .input-field input:valid + .placeholder,
+  .input-field input:focus + .placeholder {
+    top: 1rem;
+    font-size: 1rem;
+    color: $color-body;
+  }
+  
+  /* ONE */
+  .input-field.one input {
+    background: none;
+    border: .1rem solid $color-body;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-field.one input + .placeholder {
+    left: .8rem;
+    padding: 0 .5rem;
+  }
+  
+  .input-field.one input.dirty,
+  .input-field.one input:valid,
+  .input-field.one input:focus {
+    border-color: $color-body;
+    transition-delay: 0.1s
+  }
+  
+  .input-field.one input.dirty + .placeholder,
+  .input-field.one input:valid + .placeholder,
+  .input-field.one input:focus + .placeholder {
+    top: 2rem;
+    font-size: 1.2rem;
+    color: $color-body;
+    background: $color-white;
+  }
+  
+ 

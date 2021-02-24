@@ -1,0 +1,64 @@
+.signup-page{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 2.4rem;
+    height: 100vh;
+   
+    &__1{
+        background: $color-green-shade;
+        padding: 2.4rem;
+        position: relative;
+       
+
+        h1{
+            margin-top: 17.3rem;
+            color: $color-shade;
+        }
+        img{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            height: 30rem;
+        }
+    }
+    &__2{
+        padding: 2.4rem;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        // flex-direction: column;
+        padding-left: 6.2rem;
+        .general-form{
+           h3{
+               color: $color-green;
+               span{
+                   color: $color-secondary;
+               }
+           }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .signup-page{
+        grid-template-columns: 1fr;
+        &__1{
+            h1{
+                margin-top: 4.2rem;
+                display: block !important;
+            }
+            img{
+                position: inherit;
+                display: none !important;
+            }
+        }
+        &__2{
+            padding: 1.6rem;
+            width: 100%;
+
+            .general-form{
+                width: 100%;
+            }
+        }
+    }
+}

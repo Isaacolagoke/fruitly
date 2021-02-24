@@ -5,6 +5,17 @@
     @include bodycopy-semi-bold;
 }
 
+.btn-primary{
+    margin-top: 1.6rem;
+    color: $color-white !important;
+    background: $color-green !important;
+    @include border-radius;
+}
+
+.btn-primary:hover{
+    background: rgba($color-green, .8);
+}
+
 .bt-secondary{
     background: $color-green-shade;
     color: $color-white !important;
