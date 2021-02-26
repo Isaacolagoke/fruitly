@@ -1,0 +1,78 @@
+.add-card{
+    margin-top: 2.4rem;
+    padding: 1.6rem;
+    @include border-radius;
+    background: $color-background-sec;
+    width: 22rem;
+    display: flex;
+    grid-gap: 1.6rem;
+    justify-content: space-between;
+    cursor: pointer;
+
+    .iconify{
+        height: 3.2rem;
+        width: 3.2rem;
+    }
+
+    a{
+        text-decoration: none;
+        display: block;
+        align-self: center;
+    }
+}
+
+.add-card:hover{
+    background: $color-shade;
+}
+
+.billing-card{
+    @include border-radius;
+    background: $color-background-sec;
+    padding: 1.6rem;
+    width: 40.2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.2rem;
+
+    &__details{
+       .card-type{
+        display: flex;
+        margin-bottom: 1.6rem;
+        p{
+            margin-bottom: 0 !important;
+            align-self: center;
+        }
+        img{
+            height: 3.2rem;
+            margin-right: 2.4rem;
+        }
+       }
+    }
+
+    &__more{
+        .iconify{
+            width: 3.2rem;
+            height: 3.2rem;
+            cursor: pointer;
+            opacity: .6;
+        }
+
+        .iconify:hover{
+            opacity: 100;
+        }
+        .align-cnt{
+            align-self: center;
+            justify-self: center;
+        }
+    }
+}
+@media only screen and (max-width:768px) {
+    .billing-card{
+        width: 100%;
+    }
+}
+.card-row{
+    display: flex;
+    grid-gap: 3.2rem;
+}
+

@@ -5,8 +5,16 @@
     @include bodycopy-semi-bold;
 }
 
+.btn-text{
+    @include bodycopy-semi-bold; 
+    outline: none;
+}
+
+.btn-text:hover{
+    color: $color-green;
+}
+
 .btn-primary{
-    margin-top: 1.6rem;
     color: $color-white !important;
     background: $color-green !important;
     @include border-radius;

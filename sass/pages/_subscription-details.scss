@@ -1,0 +1,404 @@
+.dashboard-navigation{
+    display: flex;
+    align-items: center;
+
+    h4{
+        margin-bottom: 0;
+    }
+
+    .iconify{
+        height: 3.2rem;
+        width: 3.2rem;
+        align-self: center;
+        margin-right: 1.6rem;
+        cursor: pointer;
+    }
+}
+
+.subscription-cards{
+    display: flex;
+    margin: 2.4rem 4.8rem 0 0;
+
+
+    &__card{
+        @include border-radius;
+        width: 28.9rem;
+        min-height: 17.6rem;
+        background: $color-background-sec;
+        padding: 1.6rem;
+
+        
+        
+            .active--header{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+    
+                img{
+                    height: 4rem;
+                }
+
+                .select-btn-bg{
+                    border-radius: 50%;
+                    background: $color-white;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .iconify{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .iconify:hover{
+                        background: $color-white;
+                    }
+                }
+                }
+               
+        }
+        .t-colored{
+            color: $color-secondary;
+        }
+        .card-type{
+            display: flex;
+            margin-left: 0 !important;
+            p{
+                margin-bottom: 0;
+            }
+            img{
+                height: 2.4rem;
+                margin-right: 1.6rem;
+            }
+        }
+    // .address{
+
+    // }
+   
+}
+
+.subscription-cards div:not(:first-child){
+    margin-left: 3.2rem;
+}
+
+@media only screen and (max-width:768px) {
+    .subscription-cards{
+        flex-direction: column;
+        width: 100%
+    }
+
+    .subscription-cards div:not(:first-child){
+        margin-left: 0;
+        margin-top: 1.6rem;
+    }
+
+}
+.dash-dropdown{
+    // margin-left: 0 !important;
+    display: none;
+    position: absolute;
+    z-index: 99;
+    width: 24.6rem;
+    @include large-shadow;
+    @include border-radius;
+    opacity: 100;
+    background: $color-shade;
+    border: .05rem solid $color-body;
+    padding: 1.6rem;
+    margin-top: .8rem;
+    
+    a{
+        padding: 1.6rem;
+        background: $color-white;
+        @include border-radius;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+    }
+    a:hover{
+        background: $color-green;
+        color: $color-white !important;
+    }
+
+    .card-type{
+        padding: 1.6rem;
+        background: $color-white;
+        @include border-radius;
+        width: 100%;
+    }
+
+    .active{
+        border: 2px solid $color-green;
+    }
+}
+
+
+
+.history{
+    padding: 2.4rem;
+    display: flex;
+
+    .payment-cards{
+        width: 44.8rem;
+        @include border-radius;
+        background: $color-white;
+        padding: 1.6rem;
+
+        &__card-section{
+            padding: 1.6rem;
+            @include border-radius;
+            display: flex;
+            justify-content: space-between;
+            background:  $color-background-sec;
+
+            .icon{
+                display: flex;
+                img{
+                    height: 3.2rem;
+                }
+            }
+            .details{
+                .card-type{
+                    img{
+                        height: 2.4rem;
+                        margin-right: 2.4rem;
+                    }
+                    display: flex;
+                }
+            }
+            .date{
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .delivery-history{
+        margin-left: 7.8rem;
+
+        .delivery-cards{
+            background: $color-white;
+            width: 44.8rem;
+            @include border-radius;
+            padding: 1.6rem;
+           
+
+            &__card-section{
+                display: flex;
+                justify-content: space-between;
+                @include border-radius;
+                padding: 1.6rem;
+                background:  $color-background-sec;
+
+                .icon{
+                    img{
+                        height: 3.2rem;
+                    }
+                }
+
+                .select-btn-bg{
+                    border-radius: 50%;
+                    background: $color-white;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .iconify{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .iconify:hover{
+                        background: $color-white;
+                    }
+                }
+
+                .dash-dropdown{
+                    margin-left: 15rem;
+                    margin-top: 3.2rem;
+                }
+            }
+        }
+       
+       
+       
+       
+       
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+
+    .history{
+        flex-direction: column;
+
+        .payment-cards{
+            width: 100%;
+            padding: 0;
+
+            &__card-section{
+                grid-gap: 1.6rem;
+                .icon{
+                    img{
+                        height: 2.4rem;
+                    }
+                }
+                .details{
+                    .card-type{
+                        img{
+                            height: 2.4rem;
+                            margin-right: 2.4rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .delivery-history{
+            margin-top: 2.4rem;
+            margin-left: 0;
+
+            .delivery-cards{
+                width: 100%;
+                padding: 0;
+
+                &__card-section{
+                    grid-gap: 1.6rem;
+
+                    .dash-dropdown{
+                        margin-left: 1.6rem;
+                        margin-top: 3.2rem;
+                    }
+                }
+            }
+
+            
+        }
+}
+    .modal-content{
+        padding: .8rem;
+    }
+
+}
+// Modal
+
+.modal-content{
+    @include border-radius;
+    padding: 1.6rem;
+    margin-left: 0 !important;
+
+    .modal-body{
+
+        .m-head{
+            text-align: right;
+        }
+
+        .m-content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .bg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: $color-shade;
+                border-radius: 50%;
+                width: 13.2rem;
+                height: 13.2rem;
+                margin: 2.4rem 0;
+
+                .iconify{
+                    width: 6rem;
+                    height: 6rem;
+                    color: $color-body;
+                }
+
+            }
+        }
+
+        button{
+           align-self: center;
+        }
+        
+    }
+
+}
+
+
+
+
+// Subscription delivery details
+
+.delivery-details-box{
+    @include border-radius;
+    background: $color-background-sec;
+    padding: 1.6rem;
+    width: 26.8rem;
+    margin-top: 2.4rem;
+
+    .detail{
+        display: flex;
+        grid-gap: 1.6rem;
+        margin-bottom: 1.6rem;
+        p{
+            margin-bottom: 0;
+        }
+
+       .a{
+            width: 11.3rem;
+        }
+    }
+}
+
+
+// rate card
+.rating{
+    width: 45.7rem;
+}
+
+.rate-bg{
+    margin-top: 3.2rem;
+    @include border-radius;
+    padding: 1.6rem;
+    display: flex;
+    justify-content: center;
+    grid-gap: 1.6rem;
+    width: 45.7rem;
+    background: $color-background-sec;
+
+    .rate-card{
+        .iconify{
+            cursor: pointer;
+            width: 3.2rem;
+            height: 3.2rem;
+            color: rgba(188, 71, 73, 0.5);
+        }
+        .active{
+            color: $color-secondary;
+        }
+    }
+
+    p{
+        margin-bottom: 0 !important;
+        align-self: center;
+    }
+   
+
+}
+
+@media only screen and (max-width:768px) {
+    .rating{
+        width: 100%;
+
+        .rate-bg{
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    
+}

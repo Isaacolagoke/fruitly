@@ -76,3 +76,22 @@
 .logo-btn:hover{
     background: $color-shade;
 }
+
+textarea{
+    margin-top: 1.6rem;
+    width: 41.7rem;
+    height: 21.9rem;
+    @include border-radius;
+    outline: none;
+    border: 1px solid $color-body;
+    background: transparent;
+    padding: 1.6rem;
+}
+
+
+
+@media only screen and (max-width:768px) {
+    textarea{
+        width: 100% !important;
+    }
+}

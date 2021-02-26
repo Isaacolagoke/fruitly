@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+   <!-- Custom css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+    <title>Fruilty.app</title>
+</head>
+<body>
+       
+    <!-- Sidebar -->
+    <aside id="aside">
+        <div class="header-dashboard">
+            <img src="./asset/Fruitly-logo.png" alt="">
+        </div>
+
+        <ul class="side-menu">
+            <li>
+                <a href="/dashboard-home.html">
+                    <span class="iconify" data-icon="bx:bxs-home" data-inline="false"></span>
+                    Home
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="/dashboard-subscription.html">
+                    <span class="iconify" data-icon="bi:bag-fill" data-inline="false"></span>
+                    Subscriptions
+                </a>
+            </li>
+
+            <li>
+                <a href="/dashboard-card-billing.html">
+                    <span class="iconify" data-icon="bi:credit-card-fill" data-inline="false"></span> 
+                    Card & Billings
+                </a>
+            </li>
+
+            <li>
+                
+                <a href="/dashboard-profile.html">
+                    <span class="iconify" data-icon="carbon:user-filled" data-inline="false"></span>
+                    Your Profile
+                </a>
+            </li>
+        </ul>
+    </aside>
+
+    <article class="test">
+        <span class="iconify menu-dash" onclick="dashBtn()" data-icon="bytesize:menu" data-inline="false"></span>
+
+        <div class="header-aside">
+
+        </div>
+        <!-- subscription details -->
+        <section class="aside-section">
+            <div class="dashboard-navigation">
+                <span class="iconify" data-icon="bx:bx-arrow-back" data-inline="false"></span>
+                <h4 class="h4-bold"> Subscription Details</h4>
+            </div>
+        
+            <div class="delivery-details-box">
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Subscription:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>Active Bunny</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Cost:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>₦4000</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Delivery Status:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>Delivered</p>
+                    </div>
+                </div>
+
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Delivery Date:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>Feb, 4</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Delivery Time:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>4pm</p>
+                    </div>
+                </div>
+
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Location:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>Bodija, Ibadan</p>
+                    </div>
+                </div>
+
+
+                <div class="detail">
+                    <div class="detail__a">
+                        <p class="bodycopy-medium">Weight:</p>
+                    </div>
+
+                    <div class="detail__a">
+                        <p>3kg</p>
+                    </div>
+                </div>
+            </div>
+        
+        </section>
+
+   
+    
+
+    </article>
+
+   
+   
+
+  
+
+
+
+    
+    
+  
+  
+   
+
+     
+    
+    
+
+    <!-- side menu -->
+    <script>
+        //on resize, move search and top nav position according to window width
+var resizing = false;
+window.addEventListener('resize', function(){
+  if(resizing) return;
+  resizing = true;
+  (!window.requestAnimationFrame) ? setTimeout(moveNavigation, 300) : window.requestAnimationFrame(moveNavigation);
+});
+window.dispatchEvent(new Event('resize'));//trigger the moveNavigation function
+
+function moveNavigation(){
+  var mq = checkMQ();
+  if ( mq == 'mobile' && !Util.hasClass(navList.parentNode, 'js-cd-side-nav') ) {
+    detachElements();
+    sidebar.appendChild(navList);
+    sidebar.insertBefore(searchInput, sidebar.firstChild);
+  } else if ( mq == 'desktop' && !Util.hasClass(navList.parentNode, 'js-cd-main-header') ) {
+    detachElements();
+    mainHeader.appendChild(navList);
+    mainHeader.insertBefore(searchInput, mainHeader.firstChild.nextSibling);
+  }
+  resizing = false;
+};
+
+function detachElements() {
+  searchInput.parentNode.removeChild(searchInput);
+  navList.parentNode.removeChild(navList);
+};
+    </script>
+  
+
+    <!-- input-->
+    <script>
+           const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(el => {
+        el.addEventListener('blur', e => {
+            if(e.target.value) {
+            e.target.classList.add('dirty');
+            } else {
+            e.target.classList.remove('dirty');
+            }
+        })
+        })
+    </script>
+    <!-- dasboard mobile header -->
+    <script>
+        function dashBtn() {
+            // document.getElementsById("aside").style.transform = "translate(-50%)"
+
+            let btn = document.getElementById("aside");
+            if (btn.style.transform === "translate(-100%)") {
+                    btn.style.transform = "translate(0)";
+                } else {
+                    btn.style.transform = "translate(-100%)"
+            }
+        }
+    </script>
+    <!-- mobile header menu -->
+    <script>
+        function menuBtn() {
+            let x = document.getElementById("headerCnt");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+            }
+        }
+    </script>
+
+    <!-- dashboard dropdown -->
+    <script>
+        function dashBtn() {
+
+            let btn = document.getElementById("dashDropdown");
+        
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+            }
+        }
+
+        function dashBtnDelivery() {
+            let btn = document.getElementById("dashDropdownDelivery");
+        
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+            }
+        }
+
+        function dashBtnCard() {
+            let btn = document.getElementById("dashDropdownCard");
+                
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+            }
+        }
+
+        function deliveryBtnCard() {
+            let btn = document.getElementById("dashDnDeliHistory");
+                
+                if (btn.style.display === "none") {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+            }
+        }
+    </script>
+  
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+     <!-- Iconify -->
+     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</body>
+</html>
