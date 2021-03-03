@@ -60,8 +60,11 @@
         <span class="iconify menu-dash" onclick="dashBtn()" data-icon="bytesize:menu" data-inline="false"></span>
 
         <div class="header-aside">
-
+            <a data-toggle="tooltip" title="log out" href="">
+                <span class="iconify" data-icon="ant-design:logout-outlined" data-inline="false"></span>
+            </a>
         </div>
+        
         <!-- subscription details -->
         <section class="aside-section">
             <div class="dashboard-navigation">
@@ -85,8 +88,19 @@
                     <!-- dropdown-select -->
                     <div class="dash-dropdown" id="dashDropdown">
                         <!-- modal trigger here -->
-                        <a href="" class="mb-3 bodycopy-semi-bold" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter" >Pause Subscription</a>
-                        <a href="" class="bodycopy-semi-bold" type="button">End Subscription</a>
+                        <form action="">
+                            <button class="mb-3" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                                 Pause Subscription
+                            </button>
+                        </form>
+
+                        <form action="">
+                            <button class="">
+                                End Subscription
+                            </button>
+                        </form>
+
+                        
                     </div>
 
                     <!-- description -->
@@ -130,7 +144,7 @@
                     <!-- dropdown-select -->
                     <div class="dash-dropdown" id="dashDropdownDelivery">
                         <!-- modal trigger here -->
-                        <a href="" class="bodycopy-semi-bold" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter" >Edit Delivery Details</a>
+                        <a href="" class="" type="button" data-bs-toggle="modal" data-bs-target="#modalCenter" >Edit Delivery Details</a>
                     </div>
 
                     <!-- address -->
@@ -194,6 +208,28 @@
             <div class="payment-history">
                 <p class="sb-heading">Payment History</p>
                 
+                <div class="payment-cards mb-4">
+                    <div class="payment-cards__card-section">
+                        <div class="icon">
+                            <img src="./asset/bg.png" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class=""> 
+                                <p class="bodycopy-bold">₦15,000</p>
+                            </div>
+                            <p>Monthly bag, via paystack</p>
+                            <div class="card-type">
+                                <img src="./asset/master-card.png" alt="">
+                                <p class="body-regular"> 5555 **** **** 6456 </p>
+                            </div>
+                        </div>
+                        <div class="date">
+                            <p class="bodycopy-bold muted">Feb, 4</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="payment-cards">
                     <div class="payment-cards__card-section">
                         <div class="icon">
@@ -215,21 +251,24 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
 
             <!-- Delivery history -->
             <div class="delivery-history">
                 <p class="sb-heading">Delivery History</p>
 
-                <div class="delivery-cards">
+                <!-- Active Delivery -->
+                <div class="delivery-cards mb-4">
                     <div class="delivery-cards__card-section">
                         <div class="icon">
-                            <img src="./asset/bg.png" alt="">
+                            <img src="./asset/bg2.png" alt="">
                         </div>
 
                         <div class="details">
-                            <p class="bodycopy-bold">₦4000</p>
-                            <p>Monthly bag, via paystack</p>
+                            <p class="bodycopy-bold">₦15,000</p>
+                            <p>Delivered, Feb 4, 4pm</p>
                         </div>
 
                          <!-- select-btn -->
@@ -242,6 +281,24 @@
                             <a href="/dashboard-delivery-details.html" class="bodycopy-semi-bold mb-4" type="button" >Delivery Details</a>
                             <a href="/dashboard-feedback.html" class="bodycopy-semi-bold" type="button" >Give Feedback</a>
                         </div>
+
+                    </div>
+                </div>
+
+                <!-- Unactive delivery -->
+
+                <div class="delivery-cards">
+                    <div class="delivery-cards__card-section-unactive">
+                        <div class="icon">
+                            <img src="./asset/bg2.png" alt="">
+                        </div>
+
+                        <div class="details">
+                           <p class="bodycopy-bold">We haven't made any deliveries to you yet.</p>
+                           <p>We'll deliver to you on <span>Saturday by 8pm</span></p>
+                        </div>
+
+                      
 
                     </div>
                 </div>

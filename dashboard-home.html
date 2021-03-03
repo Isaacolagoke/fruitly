@@ -60,7 +60,9 @@
         <span class="iconify menu-dash" onclick="dashBtn()" data-icon="bytesize:menu" data-inline="false"></span>
 
         <div class="header-aside">
-
+            <a data-toggle="tooltip" title="log out" href="">
+                <span class="iconify" data-icon="ant-design:logout-outlined" data-inline="false"></span>
+            </a>
         </div>
 
        <section class="aside-section">
@@ -73,6 +75,7 @@
             <!-- Fruit Package detail -->
             <div class="card">
                 <img src="./asset/image.png" alt="">
+
                 <div class="solid"></div>
 
                 <p class="plan-header bodycopy-bold mt-3">
@@ -128,7 +131,7 @@
 
                 <div class="description-cards">
                     <!-- Fruit Package detail -->
-                    <div class="card">
+                    <div class="card-active">
                         <img src="./asset/image.png" alt="">
                         <div class="solid"></div>
         
@@ -141,9 +144,58 @@
                         </p>
                         <p class="price bodycopy-bold">₦15,000/month</p>
         
-                        <a href="/address.html" type="button" class="btn btn-secondary">ORDER NOW</a>
+                        <a href="/dashboard-subscription-details.html" type="button" class="btn btn-secondary">VIEW</a>
                     </div>
                 </div>
+
+                <!-- paused cards -->
+                <div class="description-cards">
+                    <!-- Fruit Package detail -->
+                    <div class="card-paused">
+                        <p class="card-status">
+                            <i>Subscription Paused</i>
+                        </p>
+                        <img src="./asset/image.png" alt="">
+
+                        <div class="solid"></div>
+        
+                        <p class="plan-header bodycopy-bold mt-3">
+                            Active Bunny
+                        </p>
+                        <p class="body-regular">Enough for one, Delivered to your doorstep once a week</p>
+                        <p class="body-regular">
+                           <span>Bag contains</span> Carrot, Cucumber, Pineapple, Orange, Watermelon
+                        </p>
+                        <p class="price bodycopy-bold">₦15,000/month</p>
+        
+                        <a href="/dashboard-subscription-details.html" type="button" class="btn btn-secondary">ACTIVATE SUBSCRIPTION</a>
+                    </div>
+                </div>
+
+                 <!-- Cancelled cards -->
+                 <div class="description-cards">
+                    <!-- Fruit Package detail -->
+                    <div class="card-cancelled">
+                        <p class="card-status">
+                            <i>Subscription Cancelled</i>
+                        </p>
+                        <img src="./asset/image.png" alt="">
+
+                        <div class="solid"></div>
+        
+                        <p class="plan-header bodycopy-bold mt-3">
+                            Active Bunny
+                        </p>
+                        <p class="body-regular">Enough for one, Delivered to your doorstep once a week</p>
+                        <p class="body-regular">
+                           <span>Bag contains</span> Carrot, Cucumber, Pineapple, Orange, Watermelon
+                        </p>
+                        <p class="price bodycopy-bold">₦15,000/month</p>
+        
+                        <a href="/dashboard-subscription-details.html" type="button" class="btn btn-secondary">ACTIVATE SUBSCRIPTION</a>
+                    </div>
+                </div>
+
             </div>
        </section>
 

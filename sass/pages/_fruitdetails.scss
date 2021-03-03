@@ -22,11 +22,183 @@
         }
 
         .solid{
-            margin-left: 0;
+            margin-left: 0 !important;
             width: 21.2rem;
             height: .1rem;
             @include border-radius;
             background: $color-body;
+            margin-top: .8rem;
+        }
+        .plan-header{
+            color: $color-secondary;
+            margin-top: .8rem;
+            text-align: center;
+        }
+        .body-regular{
+            text-align: center;
+            span{
+                font-weight: 600;
+            }
+        }
+        .price{
+            color: $color-primary;
+        }
+        a{
+            width: 100%;
+            background: $color-green;
+            color: $color-white !important;
+        }
+        a:hover{
+            background: rgba($color-green, .8);
+        }
+    }
+    // Subscription paused
+    .card-paused{
+        @include border-radius;
+        @include card-bg;
+        border: .2rem solid $color-green-shade;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        width: 33.2rem;
+        // height: 46.8rem;
+
+        .card-status{
+            padding: .8rem;
+            background: rgba($color-green, .1);
+            @include border-radius;
+            color: $color-green-shade;
+        }
+
+        img{
+            height: 17.6rem;
+            width: 22.8rem;
+        }
+
+        .solid{
+            margin-left: 0 !important;
+            width: 21.2rem;
+            height: .1rem;
+            @include border-radius;
+            background: $color-body !important;
+            margin-top: .8rem;
+        }
+        .plan-header{
+            color: $color-secondary;
+            margin-top: .8rem;
+            text-align: center;
+        }
+        .body-regular{
+            text-align: center;
+            span{
+                font-weight: 600;
+            }
+        }
+        .price{
+            color: $color-primary;
+        }
+        a{
+            width: 100%;
+            background: $color-green;
+            color: $color-white !important;
+        }
+        a:hover{
+            background: rgba($color-green, .8);
+        }
+    }
+
+    // Subscription cancelled
+
+    .card-cancelled{
+        @include border-radius;
+        @include card-bg;
+        border: .2rem solid $color-secondary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        width: 33.2rem;
+        // height: 46.8rem;
+
+        .card-status{
+            padding: .8rem;
+            background: rgba($color-secondary, .1);
+            @include border-radius;
+            color: $color-secondary;
+        }
+
+        img{
+            height: 17.6rem;
+            width: 22.8rem;
+        }
+
+        .solid{
+            margin-left: 0 !important;
+            width: 21.2rem;
+            height: .1rem;
+            @include border-radius;
+            background: $color-body !important;
+            margin-top: .8rem;
+        }
+        .plan-header{
+            color: $color-secondary;
+            margin-top: .8rem;
+            text-align: center;
+        }
+        .body-regular{
+            text-align: center;
+            span{
+                font-weight: 600;
+            }
+        }
+        .price{
+            color: $color-primary;
+        }
+        a{
+            width: 100%;
+            background: $color-green;
+            color: $color-white !important;
+        }
+        a:hover{
+            background: rgba($color-green, .8);
+        }
+    }
+
+    // Active subscription
+
+    .card-active{
+        @include border-radius;
+        @include card-bg;
+        // border: .2rem solid $color-secondary;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1.6rem;
+        width: 33.2rem;
+        // height: 46.8rem;
+
+        .card-status{
+            padding: .8rem;
+            background: rgba($color-secondary, .1);
+            @include border-radius;
+            color: $color-secondary;
+        }
+
+        img{
+            height: 17.6rem;
+            width: 22.8rem;
+        }
+
+        .solid{
+            margin-left: 0 !important;
+            width: 21.2rem;
+            height: .1rem;
+            @include border-radius;
+            background: $color-body !important;
             margin-top: .8rem;
         }
         .plan-header{

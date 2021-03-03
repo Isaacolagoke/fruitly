@@ -24,26 +24,14 @@ aside{
                 @include border-radius;
                 background: rgba(255, 255, 255, 0.05);
                 margin-top: 1.6rem !important;
-                // display: flex;
-                // padding: 1.6rem;
-                // pointer-events:all;
-                // color: $color-white !important;
-
-                // .iconify{
-                //     width: 2.4rem !important;
-                //     height: 2.4rem !important;
-                // }
 
                 a{
-                    // margin-left: 1.6rem;
                     text-decoration: none;
-                    // color: $color-white !important;
                     @include bodycopy-semi-bold;
                     display: block;
 
                     display: flex;
                     padding: 1.6rem;
-                    // pointer-events:all;
                     color: $color-white !important;
                     
                     .iconify{
@@ -53,10 +41,7 @@ aside{
                     }
                     
                 }
-                // input[type="button"]{
-                //     padding: 1.6rem;
-                //     background: $color-secondary;
-                // }
+            
             }
 
             li:hover{
@@ -97,6 +82,15 @@ aside{
                 margin-left: 0 !important;
             }
         }
+
+        .header-aside{
+            justify-content: flex-start !important;
+            a{
+                font-size: 2.4rem;
+                align-self: center;
+                opacity: .7 !important;
+            }
+        }
     }
 }
 
@@ -117,6 +111,19 @@ article{
     .header-aside{
         height: 8rem;
         background: $color-background-sec;
+        display: flex;
+        padding: 2.4rem;
+        align-items: center;
+        justify-content: flex-end;
+       
+        a{
+            font-size: 3.2rem;
+            align-self: center;
+        }
+
+        a:hover{
+            color: $color-green !important;
+        }
     }
 
     .aside-section{
