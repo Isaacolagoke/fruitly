@@ -25,12 +25,61 @@
 
 @media only screen and (max-width:768px) {
     .preference-container{
-       flex-direction: column;
+      flex-direction: column;
+      grid-gap: .8rem;
 
        &__hour{
         margin-left: 0;
+        z-index: 5;
+
     }
+
+    .select-box {
+      width: 20rem !important;
+      &__option {
+        background-color: $color-shade;
+      }
     }
+
+    }
+
+   
+}
+
+@media only screen and (max-width:320px) {
+  .preference-container{
+    grid-gap: .8rem;
+
+     &__hour{
+      margin-left: 0;
+      z-index: 5;
+
+  }
+
+  .select-box {
+    width: 16rem !important;
+    &__option {
+      background-color: $color-shade;
+    }
+  }
+
+  }
+
+ 
+}
+
+
+
+@media only screen and (max-width:340px) {
+
+  .select-box {
+    width: 22rem !important;
+    &__option {
+      background-color: $color-shade;
+    }
+  }
+
+ 
 }
 
 
@@ -53,7 +102,7 @@
       & + .select-box__list {
         opacity: 1;
 
-        // We have to set "animation-name: none;" to make the list visible (read below how it works)
+        // We have to set "animation-name: none;" to make the list visible 
 
         animation-name: none;
         
@@ -80,6 +129,7 @@
   
   &__value {
     display: flex;
+    z-index: 1;
     @include border-radius;
   }
   
@@ -93,6 +143,7 @@
   
   &__input-text {
     display: none;
+    z-index: 1;
     width: 100%;
     margin: 0;
     padding: 15px;
@@ -110,6 +161,7 @@
     padding: 0;
     list-style: none;
     opacity: 0;
+   
     
     // We need to use animation with delay.
     // Otherwise the click event will not have time to run on label, because this element disapears immediately when .select-box__current element loses the focus.
@@ -128,8 +180,10 @@
     display: block;
     padding: 1.6rem;
     border: .1rem solid $color-body;
-    margin: .4rem 0;
     @include border-radius;
+    margin-top: .8rem;
+    z-index: 4 !important;
+    position: relative !important;
     
     &:hover,
     &:focus {

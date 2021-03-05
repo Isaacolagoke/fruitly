@@ -19,7 +19,7 @@
     display: flex;
     margin: 2.4rem 4.8rem 0 0;
 
-
+   
     &__card{
         @include border-radius;
         width: 28.9rem;
@@ -36,8 +36,12 @@
     
                 img{
                     height: 4rem;
+                    align-self: center;
                 }
 
+                p{
+                    align-self: center;
+                }
                 .select-btn-bg{
                     margin-top: 0;
                     border-radius: 50%;
@@ -86,7 +90,22 @@
 @media only screen and (max-width:768px) {
     .subscription-cards{
         flex-direction: column;
-        width: 100%
+        width: 100%;
+
+        &__cards{
+
+            div{
+                margin-top: 0 !important;
+            }
+          
+
+            .active--header{
+                margin-top: 0 !important;
+                .select-btn-bg{
+                    margin-top: 0 !important;
+                }
+            }
+        }
     }
 
     .subscription-cards div:not(:first-child){
@@ -119,15 +138,16 @@
     padding: 1.6rem;
     margin-top: .8rem;
     
-    a{
+    button, a{
         padding: 1.6rem;
         background: $color-white;
+        border: none;
         @include border-radius;
         width: 100%;
         text-align: center;
         text-decoration: none;
     }
-    a:hover{
+    button:hover, a:hover{
         background: $color-green;
         color: $color-white !important;
     }
@@ -159,8 +179,8 @@
         &__card-section{
             padding: 1.6rem;
             @include border-radius;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 12% 68% 20%;
             background:  $color-background-sec;
 
             .icon{
@@ -179,6 +199,7 @@
                 }
             }
             .date{
+                justify-self: end;
                 opacity: 0.7;
             }
         }
@@ -195,19 +216,68 @@
            
 
             &__card-section{
-                display: flex;
-                justify-content: space-between;
+                display: grid;
+                grid-template-columns: 12% 68% 20%;
                 @include border-radius;
                 padding: 1.6rem;
                 background:  $color-background-sec;
 
                 .icon{
+                   
                     img{
                         height: 3.2rem;
                     }
                 }
 
                 .select-btn-bg{
+                    justify-self: end;
+                    border-radius: 50%;
+                    background: $color-white;
+                    width: 3.2rem;
+                    height: 3.2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .iconify{
+                        display: block;
+                        cursor: pointer;
+                    }
+                    .iconify:hover{
+                        background: $color-white;
+                    }
+                }
+
+                .dash-dropdown{
+                    margin-left: 15rem;
+                    margin-top: 3.2rem;
+                }
+            }
+
+            &__card-section-unactive{
+                display: grid;
+                grid-template-columns: 10% 90%;
+                @include border-radius;
+                padding: 1.6rem;
+                background:  $color-background-sec;
+
+                .icon{
+                   
+                    img{
+                        height: 3.2rem;
+                    }
+                }
+                .details{
+                    justify-self: start;
+
+                    p{
+                        span{
+                            color: $color-green-shade;
+                        }
+                    }
+                }
+                .select-btn-bg{
+                    justify-self: end;
                     border-radius: 50%;
                     background: $color-white;
                     width: 3.2rem;
@@ -246,11 +316,15 @@
         flex-direction: column;
 
         .payment-cards{
-            width: 100%;
+            width: 100% !important;
             padding: 0;
 
+
             &__card-section{
-                grid-gap: 1.6rem;
+               display: flex;
+               justify-content: space-around;
+                width: 100%;
+                grid-gap: .8rem;
                 .icon{
                     img{
                         height: 2.4rem;
@@ -276,7 +350,22 @@
                 padding: 0;
 
                 &__card-section{
-                    grid-gap: 1.6rem;
+                    width: 100%;
+                    display: flex !important;
+                    justify-content: space-around !important;
+                    grid-gap: .8rem;
+
+                    .dash-dropdown{
+                        margin-left: 1.6rem;
+                        margin-top: 3.2rem;
+                    }
+                }
+
+                &__card-section-unactive{
+                    width: 100%;
+                    display: flex !important;
+                    justify-content: space-around !important;
+                    grid-gap: .8rem;
 
                     .dash-dropdown{
                         margin-left: 1.6rem;

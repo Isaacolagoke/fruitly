@@ -154,7 +154,16 @@
     padding-top: 1.6rem;
     margin-bottom: .5rem;
   }
-  
+  .input-value{
+    @include border-radius;
+    width: 41.7rem;
+    outline: none;
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    background: none;
+    border: .1rem solid $color-body;
+  }
+
   .input-field input {
     border: none;
     -webkit-appearance: none;
@@ -183,7 +192,8 @@
   
   .input-field input.dirty + .placeholder,
   .input-field input:valid + .placeholder,
-  .input-field input:focus + .placeholder {
+  .input-field input:focus + .placeholder,
+  .input-field input:active + .placeholder{
     top: 1rem;
     font-size: 1rem;
     color: $color-body;
