@@ -1265,6 +1265,9 @@ footer .social .icon:hover {
     height: 46.8rem;
     margin-bottom: 1.6rem;
   }
+  .description-cards .card-active, .description-cards .card-cancelled, .description-cards .card-paused {
+    width: 100%;
+  }
   .description-cards div:not(:first-child) {
     margin-left: 0;
   }

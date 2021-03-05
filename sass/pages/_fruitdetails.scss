@@ -239,6 +239,10 @@
             height: 46.8rem;
             margin-bottom: 1.6rem;
         }
+
+        .card-active,  .card-cancelled,  .card-paused{
+            width: 100%;
+        }
     
     }
 
