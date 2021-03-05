@@ -1546,6 +1546,10 @@ footer .social .icon:hover {
   margin-top: 2.4rem;
 }
 
+.preference-container .select-box {
+  margin-left: 0 !important;
+}
+
 .preference-container__hour {
   margin-left: 3.2rem;
 }
@@ -1563,6 +1567,7 @@ footer .social .icon:hover {
     z-index: 5;
   }
   .preference-container .select-box {
+    margin-left: 0 !important;
     width: 20rem !important;
   }
   .preference-container .select-box__option {
@@ -1828,6 +1833,10 @@ textarea {
   textarea {
     width: 100% !important;
   }
+}
+
+.delivery-update {
+  margin-left: 0 !important;
 }
 
 .signup-page {
@@ -2694,6 +2703,18 @@ article .aside-section .description-cards div:not(:first-child) {
   display: flex;
   grid-gap: 4.6rem;
   margin-top: 4rem;
+}
+
+.form-section .general-form .location-setting form .preference-container {
+  grid-gap: 3.2rem;
+}
+
+.form-section .general-form .location-setting form .preference-container__hour {
+  margin-top: 0;
+}
+
+.form-section .general-form .location-setting div:not(:first-child) {
+  margin-left: 0;
 }
 
 @media only screen and (max-width: 768px) {

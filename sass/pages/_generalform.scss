@@ -1,6 +1,7 @@
 .general-form{
     .location-setting{
         margin-top: 1.6rem;
+       
 
         .sb-heading{
             color: $color-green;
@@ -94,4 +95,8 @@ textarea{
     textarea{
         width: 100% !important;
     }
+}
+
+.delivery-update {
+    margin-left: 0 !important;
 }
