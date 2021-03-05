@@ -1712,6 +1712,14 @@ aside .side-menu li.active a {
   article .menu-dash {
     display: block !important;
   }
+  article .header-aside {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+  }
+  article .header-aside a {
+    font-size: 2.4rem !important;
+  }
   article .aside-section {
     padding: 2.4rem;
   }
@@ -1739,6 +1747,20 @@ article .menu-dash {
 article .header-aside {
   height: 8rem;
   background: rgba(242, 232, 207, 0.3);
+  padding: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+article .header-aside a {
+  font-size: 3.2rem;
 }
 
 article .aside-section {
@@ -1802,6 +1824,7 @@ article .aside-section .description-cards div:not(:first-child) {
 }
 
 .subscription-cards__card .active--header .select-btn-bg {
+  margin-top: 0;
   border-radius: 50%;
   background: #ffffff;
   width: 3.2rem;
@@ -1861,6 +1884,12 @@ article .aside-section .description-cards div:not(:first-child) {
   .subscription-cards div:not(:first-child) {
     margin-left: 0;
     margin-top: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .subscription-cards__card {
+    width: 100%;
   }
 }
 
