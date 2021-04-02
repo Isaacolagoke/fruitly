@@ -14,8 +14,10 @@
         align-items: center;
         padding: 1.6rem;
         width: 33.2rem;
-        height: 46.8rem;
-
+        // height: 46.8rem;
+        button{
+            width: 100%;
+        }
         img{
             height: 17.6rem;
             width: 22.8rem;
@@ -65,6 +67,9 @@
         width: 33.2rem;
         // height: 46.8rem;
 
+        button{
+            width: 100%;
+        }
         .card-status{
             padding: .8rem;
             background: rgba($color-green, .1);
@@ -123,6 +128,9 @@
         width: 33.2rem;
         // height: 46.8rem;
 
+        button{
+            width: 100%;
+        }
         .card-status{
             padding: .8rem;
             background: rgba($color-secondary, .1);
@@ -181,6 +189,9 @@
         width: 33.2rem;
         // height: 46.8rem;
 
+        button{
+            width: 100%;
+        }
         .card-status{
             padding: .8rem;
             background: rgba($color-secondary, .1);

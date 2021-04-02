@@ -32,10 +32,12 @@
                             <a href="">How it works</a>
                         </li>
                         <li>
-                            <a type="button" class="btn bt-secondary-light" href="">Sign in</a>
+                            <button class="btn bt-secondary-light" onclick="document.location='/sign-in.html'">Sign in</button>
+                            <!-- <a type="button" class="btn bt-secondary-light" href="/sign-in.html">Sign in</a> -->
                         </li>
                         <li>
-                            <a type="button" class="btn bt-secondary" href="">Get Started</a>
+                            <button class="btn bt-secondary" onclick="document.location='/fruit-details.html'">Get Started</button>
+                            <!-- <a type="button" class="btn bt-secondary" href="/fruit-details.html">Get Started</a> -->
                         </li>
                     </ul>
                 </div>
@@ -94,28 +96,6 @@
                         <option value="1">Every Sunday</option>
                     </select>
 
-                    <!-- <div class="select-box">
-                        <div class="select-box__current" tabindex="1">
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="saturday" value="1" name="deliveryDay" checked="checked"/>
-                            <p class="select-box__input-text">Every Saturday</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="sunday" value="4" name="deliveryDay"/>
-                            <p class="select-box__input-text">Every Sunday</p>
-                        </div>
-                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-                        </div>
-                        <ul class="select-box__list">
-                        <li>
-                            <label class="select-box__option" for="saturday" aria-hidden="aria-hidden">Every Saturday</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="sunday" aria-hidden="aria-hidden">Every Sunday</label>
-                        </li>
-                        </ul>
-                    </div> -->
-
                 </div>  
 
                   <!-- hour -->
@@ -134,74 +114,10 @@
                         <option value="1">3pm-4pm</option>
                     </select>
 
-                    <!-- <div class="select-box">
-                        <div class="select-box__current" tabindex="1">
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="8-9am" value="1" name="deliveryTime" checked="checked"/>
-                            <p class="select-box__input-text">8-9am</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="9-10am" value="2" name="deliveryTime"/>
-                            <p class="select-box__input-text">9-10am</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="10-11am" value="3" name="deliveryTime"/>
-                            <p class="select-box__input-text">10-11am</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="11-12am" value="4" name="deliveryTime"/>
-                            <p class="select-box__input-text">11-12pm</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="12-1pm" value="5" name="deliveryTime"/>
-                            <p class="select-box__input-text">12-1pm</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="1pm-2pm" value="6" name="deliveryTime"/>
-                            <p class="select-box__input-text">1pm-2pm</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="2pm-3pm" value="7" name="deliveryTime"/>
-                            <p class="select-box__input-text">2pm-3pm</p>
-                        </div>
-                        <div class="select-box__value">
-                            <input class="select-box__input" type="radio" id="3pm-4pm" value="7" name="deliveryTime"/>
-                            <p class="select-box__input-text">3pm-4pm</p>
-                        </div>
-                        <img class="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-                        </div>
-                        <ul class="select-box__list">
-                        <li>
-                            <label class="select-box__option" for="9-10am" aria-hidden="aria-hidden">8-9am</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="9-10am" aria-hidden="aria-hidden">9-10am</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="10-11am" aria-hidden="aria-hidden">10-11am</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="11-12pm" aria-hidden="aria-hidden">11-12pm</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="12-1pm" aria-hidden="aria-hidden">12-1pm</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="1-2pm" aria-hidden="aria-hidden">1pm-2pm</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="2-3pm" aria-hidden="aria-hidden">2pm-3pm</label>
-                        </li>
-                        <li>
-                            <label class="select-box__option" for="3pm-4pm" aria-hidden="aria-hidden">3pm-4pm</label>
-                        </li>
-                        </ul>
-                    </div> -->
-
                 </div>  
 
             </div>
-            <a href="/set-payment.html" type="button" class="btn btn-primary delivery-btn">Confirm Preference</a>
+            <button onclick="document.location='/set-payment.html'" class="btn btn-primary delivery-btn">Confirm Preference</button>
         </div>
 
     

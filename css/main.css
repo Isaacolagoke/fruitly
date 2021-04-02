@@ -995,7 +995,10 @@ footer .social .icon:hover {
           align-items: center;
   padding: 1.6rem;
   width: 33.2rem;
-  height: 46.8rem;
+}
+
+.description-cards .card button {
+  width: 100%;
 }
 
 .description-cards .card img {
@@ -1059,6 +1062,10 @@ footer .social .icon:hover {
           align-items: center;
   padding: 1.6rem;
   width: 33.2rem;
+}
+
+.description-cards .card-paused button {
+  width: 100%;
 }
 
 .description-cards .card-paused .card-status {
@@ -1131,6 +1138,10 @@ footer .social .icon:hover {
   width: 33.2rem;
 }
 
+.description-cards .card-cancelled button {
+  width: 100%;
+}
+
 .description-cards .card-cancelled .card-status {
   padding: .8rem;
   background: rgba(188, 71, 73, 0.1);
@@ -1198,6 +1209,10 @@ footer .social .icon:hover {
           align-items: center;
   padding: 1.6rem;
   width: 33.2rem;
+}
+
+.description-cards .card-active button {
+  width: 100%;
 }
 
 .description-cards .card-active .card-status {
